@@ -1,0 +1,8 @@
+Dependencies:
+-pip
+-virtual environment
+-virtualenvwrapper
+
+#Installing a package
+
+run pip, and tell it to install babel for us. 

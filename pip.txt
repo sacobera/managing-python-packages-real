@@ -1,0 +1,33 @@
+to check python3  version:
+- go to terminal:
+-type: python3 --version
+
+to check pip version for python 3
+-termina: type: pip3 --version
+
+to install a package on python 3:
+-terminal: type: python3 -m pip install packagename
+
+to install multiple packages for python3
+
+to uninstall a package but not its dependencies 
+-terminal: type: python3 -m pip uninstall packagename
+
+upgrade a package:
+-terminal: type: python3 -m pip install -U requests
+
+FINDING PACKAGE INFORMATION
+to list all installed packages (in the current env)
+pip list
+
+to get info on specific package
+pip show requests
+
+to get help:
+pip help
+or pip help install 
+
+note: the default python installed on the OS is python2.7, so when we type python in the terminal, it will
+refer to python 2.7
+
+-always use python3

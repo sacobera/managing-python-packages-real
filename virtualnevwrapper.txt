@@ -1,0 +1,44 @@
+Virtualenvwrapper - user friendly wrapper around virtualenvwrapper
+
+
+#To Install:
+In terminal: python 3 -m pip install virtualenvwraper
+To check where it is installed: which virtualenvwrapper.sh 
+Copy the file path
+In terminal: nano .profile
+In terminal: source " " #paste the file path copied in step 3
+
+If your terminal says that there is no virtualenvwrapper installed( because you may be running an old python on default but you want to use your new python installed)
+1. type in terminal: which python3
+2. copy the path
+3. in terminal: nano .profile
+4. before the source code, type: export VIRTUALENVWRAPPER_PYTHON=" " #paste the path inside the string
+5. save and exit
+
+
+#VIRTUALENVWRAPPER COMMANDS
+
+workon - list environments
+
+workon projectname - activate environment, switch to project
+
+deactivate - deactivate ebvironment
+
+#to create a project and a virtualenv and bind them
+mkproject new_proj
+mkproject -p python3 new_proj
+
+#to bind an existing projecy to a virtualenv
+#binds active venv to current working dir 
+setvirtualproject
+
+#VIRTUALENVWRAPPER COMMANDS: VENVS
+
+#create a virtual environment
+mkvirtualenv new_env
+
+#Remove a virtualenv
+rmvirtualenv some_env
+
+#crate a temporary virtual environment
+mktmpenv

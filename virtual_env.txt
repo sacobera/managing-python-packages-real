@@ -1,0 +1,25 @@
+Virtual environments - isolated context for installing packages 
+- always work inside a virtual environment
+
+#Starting a new project
+1. create a virtual environment. go to a folder where you want to create it, and mkdir if you dont already have a folder inside
+2. cd into the new directory you just made and type: 
+python3 -m venv my_env
+
+
+#To Activate:
+1. ls my_env
+2. . my_env/bin/activate
+3. check the python version
+4.  check the pip version : pip -V
+5. check the packages installed inside: python -m pip list
+6. install the package you need: python -m pip install packagename
+
+
+#Syncing Dependencies with the whole team
+1. note: this has to be run in an active environment
+2, go to the root folder and file of active environment
+3. type: python -m pip freeze 
+4. type: python -m pip freeze > requirements.txt #this creates a new file 
+
+
